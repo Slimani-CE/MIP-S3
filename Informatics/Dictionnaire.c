@@ -76,7 +76,7 @@ int main()
     gets(mot);
     for(i=0; i<n; i++)
     {
-        if(strcmp(dict[i],mot)==0)
+        if(!strcmp(dict[i],mot)) // ou if(strcmp(dict[i],mot)==0) c'est la même chose
         {
             for(j=i; j<n-1; j++)
             {
@@ -88,7 +88,7 @@ int main()
             // on le remplace par rien (NULL-Character)
             strcpy(dict[n],"\0"); // le mot suprimé est lecalisé a la fin de tableau
             printf("ton mot a ete suprime!\n");
-            break;
+            break; // la sortire de boucle, car nous trouvons le mot
         }
     }
     // Affichage
