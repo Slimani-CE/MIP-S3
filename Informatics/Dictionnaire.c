@@ -55,7 +55,7 @@ int main()
                 strcpy(dict[j+1],dict[j]);
             }
             strcpy(dict[i],mot);
-            break;
+            break; // la sortir de la boucle, car on trouve la place d'insertion
         }
     }
     if(i==n) // le mot est de plus grand de tous les mots deja inserer
@@ -85,7 +85,7 @@ int main()
             }
             n--; // on suprime un mot
             // on le remplace par rien (NULL-Character)
-            strcpy(dict[n],"\0"); // le mot suprimé est lecalisé a la fin de tableau
+            strcpy(dict[n],"\0"); // le mot suprimé est localisé a la fin de tableau
             printf("ton mot a ete suprime!\n");
             break; // la sortire de boucle, car nous trouvons le mot
         }
