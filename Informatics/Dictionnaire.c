@@ -1,4 +1,4 @@
-#include <stdio.h>  // output/input/ereurs/... (printf(),scanf(),gets(),puts()...)
+#include <stdio.h>  // output/input/erreurs/... (printf(),scanf(),gets(),puts()...)
 #include <stdlib.h> // Type conversion (chaine de c. <-> nombre)
 #include <string.h> // biblio pour les chaînes des caractéres comparer/copier/chercher/...
 
