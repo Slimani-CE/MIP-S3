@@ -16,7 +16,7 @@ int main()
     printf("Entrer la taille de votre dictionnaire : ");
     scanf("%d",&n);
     printf("Entrer ton liste des mots :\n");
-    getchar(); // pour tapez le premier dict[0] suivante sinon il va stocker rien (ligne vide)
+    getchar(); // pour tapez le premier dict[0] suivante // sinon (n'ajoute pas ce ligne) il va stocker rien (ligne vide)
     for(i=0; i<n; i++)
     {
         printf("-> ");
